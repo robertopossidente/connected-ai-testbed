@@ -43,9 +43,9 @@ services:
         volumes:
             - "./config_files/:/config_files"
             - "/dev/bus/usb:/dev/bus/usb"
-    base-ran-nfapi:
+    base-nfapi:
         build: ./oai-ran-docker/base_nfapi/
-        image: base-ran-nfapi
+        image: base-nfapi
         privileged: true
         network_mode: host
         stdin_open: true
